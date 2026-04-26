@@ -3,7 +3,7 @@
 Project PV is a small Python desktop app for defining skeleton motion and
 exporting the result as a pixel GIF animation.
 
-Everything is experimental with AI generated code. trying to improve the code quality by add more skills.
+Everything is experimental with AI generated code. Trying to improve the code quality by adding more agent skills.
 
 If you like it, i do not mind any tips!
 
