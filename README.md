@@ -3,6 +3,11 @@
 Project PV is a small Python desktop app for defining skeleton motion and
 exporting the result as a pixel GIF animation.
 
+If you like it, i do not mind any tips!
+
+[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=JSTCTTLDQSCSE)
+
+
 ## Setup
 
 ```powershell
