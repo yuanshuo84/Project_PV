@@ -45,6 +45,8 @@ class MotionSpec:
     outline: str = "#17202a"
     background: str = "#f7f4ea"
     show_joints: bool = True
+    show_bars: bool = True
+    hidden_bars: tuple[str, ...] = ()
     hidden_bar_images: tuple[str, ...] = ()
     keyframes: tuple[SkeletonKeyFrame, ...] = field(default_factory=tuple)
     skeleton: SkeletonDefinition = DEFAULT_SKELETON
@@ -57,6 +59,9 @@ class MotionSpec:
         if self.duration_ms < 10:
             raise ValueError("frame duration must be at least 10 ms")
         defined_bars = {bar.name for bar in self.skeleton.bars}
+        for bar_name in self.hidden_bars:
+            if bar_name not in defined_bars:
+                raise ValueError(f"hidden bar references undefined bar {bar_name}")
         for bar_name in self.hidden_bar_images:
             if bar_name not in defined_bars:
                 raise ValueError(f"hidden body part references undefined bar {bar_name}")
@@ -278,13 +283,16 @@ def render_frame(
     flattened_points = [point for segment in vector_segments for point in segment]
     pixel_points, fit_scale = fit_vector_points_to_pixel_field(flattened_points, spec.width, spec.height)
     pixel_joints, _ = fit_vector_points_to_pixel_field(vector_joints, spec.width, spec.height)
-    pixel_segments = list(zip(pixel_points[0::2], pixel_points[1::2]))
+    pixel_segments = list(zip(spec.skeleton.bars, pixel_points[0::2], pixel_points[1::2]))
     pixel_joint_map = {joint.name: point for joint, point in zip(joints, pixel_joints)}
 
     bar_width = max(1, round(5 * scale * fit_scale))
     joint_radius = max(1, round(5 * scale * fit_scale))
-    for start, end in pixel_segments:
-        draw.line((start, end), fill=spec.outline, width=bar_width)
+    if spec.show_bars:
+        for bar, start, end in pixel_segments:
+            if bar.name in spec.hidden_bars:
+                continue
+            draw.line((start, end), fill=spec.outline, width=bar_width)
     if bar_images:
         for bar in sorted(spec.skeleton.bars, key=lambda item: item.layer):
             bar_image = bar_images.get(bar.name)
@@ -323,6 +331,8 @@ def motion_spec_to_record(spec: MotionSpec) -> dict[str, Any]:
             "outline": spec.outline,
             "background": spec.background,
             "show_joints": spec.show_joints,
+            "show_bars": spec.show_bars,
+            "hidden_bars": list(spec.hidden_bars),
             "hidden_bar_images": list(spec.hidden_bar_images),
         },
         "skeleton": skeleton_to_record(spec.skeleton),
@@ -419,6 +429,8 @@ def motion_spec_from_record(record: dict[str, Any]) -> MotionSpec:
         outline=str(parameters.get("outline", MotionSpec.outline)),
         background=str(parameters.get("background", MotionSpec.background)),
         show_joints=bool(parameters.get("show_joints", True)),
+        show_bars=bool(parameters.get("show_bars", True)),
+        hidden_bars=tuple(parameters.get("hidden_bars", ())),
         hidden_bar_images=tuple(parameters.get("hidden_bar_images", ())),
         keyframes=tuple(keyframes),
         skeleton=skeleton,

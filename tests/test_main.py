@@ -292,6 +292,8 @@ def test_motion_spec_record_round_trips_parameters_and_keyframes():
         frames=4,
         duration_ms=20,
         fill="#abcdef",
+        show_bars=False,
+        hidden_bars=("left_collar",),
         hidden_bar_images=("spine",),
         keyframes=keyframes,
     )
@@ -301,6 +303,8 @@ def test_motion_spec_record_round_trips_parameters_and_keyframes():
     assert loaded == spec
     assert loaded.keyframes[0].bar_images[0].source_box == (1, 2, 4, 6)
     assert loaded.keyframes[0].bar_images[0].anchor_end_x == 4
+    assert loaded.show_bars is False
+    assert loaded.hidden_bars == ("left_collar",)
     assert loaded.hidden_bar_images == ("spine",)
 
 
@@ -377,6 +381,39 @@ def test_render_frame_uses_global_joint_visibility_and_bar_images(tmp_path):
 
     assert len(frames) == 2
     assert frames[0].getbbox() is not None
+
+
+def test_render_frame_uses_global_bar_visibility():
+    skeleton = SkeletonDefinition(
+        joints=(Joint("start", 0, 0), Joint("end", 40, 0)),
+        bars=(Bar("body", "start", "end"),),
+        rigid_bars=(Bar("body", "start", "end"),),
+    )
+    visible = MotionSpec(
+        width=96,
+        height=96,
+        frames=2,
+        duration_ms=20,
+        outline="#ff0000",
+        show_joints=False,
+        skeleton=skeleton,
+    )
+    hidden = MotionSpec(
+        width=96,
+        height=96,
+        frames=2,
+        duration_ms=20,
+        outline="#ff0000",
+        show_joints=False,
+        show_bars=False,
+        skeleton=skeleton,
+    )
+
+    visible_frame = render_frame(visible, 0, transparent_background=True)
+    hidden_frame = render_frame(hidden, 0, transparent_background=True)
+
+    assert visible_frame.getchannel("A").getbbox() is not None
+    assert hidden_frame.getchannel("A").getbbox() is None
 
 
 def test_bar_image_anchors_map_to_rotated_bar_ends(tmp_path):

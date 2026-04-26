@@ -15,14 +15,14 @@
     },
     {
       "name": "left_shoulder",
-      "x": -60.0,
-      "y": -41.0,
+      "x": -50.0,
+      "y": -35.0,
       "radius": 5.0
     },
     {
       "name": "right_shoulder",
-      "x": 60.0,
-      "y": -41.0,
+      "x": 50.0,
+      "y": -35.0,
       "radius": 5.0
     },
     {
@@ -139,19 +139,19 @@
       "name": "right_upper_arm",
       "start_joint": "right_shoulder",
       "end_joint": "right_elbow",
-      "layer": 2
+      "layer": 0
     },
     {
       "name": "right_forearm",
       "start_joint": "right_elbow",
       "end_joint": "right_wrist",
-      "layer": 0
+      "layer": 1
     },
     {
       "name": "spine",
       "start_joint": "neck",
       "end_joint": "pelvis",
-      "layer": 0
+      "layer": 1
     },
     {
       "name": "left_pelvis",

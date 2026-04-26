@@ -13,6 +13,8 @@ from PIL.Image import Resampling
 
 from project_pv.animation import (
     MotionSpec,
+    VECTOR_FIELD_HEIGHT,
+    VECTOR_FIELD_WIDTH,
     fit_vector_points_to_pixel_field,
     load_record,
     render_frame,
@@ -27,6 +29,7 @@ from project_pv.skeleton_model import (
     DEFAULT_SKELETON,
     SkeletonDefinition,
     Joint,
+    enforce_rigid_bar_lengths,
     interpolate_keyframe_state,
     joint_points,
     keyframe_bar_image_map,
@@ -66,6 +69,7 @@ class ProjectPVApp(tk.Tk):
         self._pixel_cutout_view: tuple[int, int, int, int, float, float, float, float] | None = None
         self._pixel_selection_start: tuple[int, int] | None = None
         self._pixel_drag_anchor: str | None = None
+        self._vector_drag_joint: str | None = None
         self._bar_image_cache: dict[tuple[object, ...], object] = {}
         self._preview_image_id: int | None = None
         self._after_id: str | None = None
@@ -84,6 +88,7 @@ class ProjectPVApp(tk.Tk):
         self.outline_var = tk.StringVar(value="#17202a")
         self.background_var = tk.StringVar(value="#f7f4ea")
         self.show_joints_var = tk.BooleanVar(value=True)
+        self.show_bars_var = tk.BooleanVar(value=True)
         self.preview_zoom_var = tk.DoubleVar(value=2.0)
         self.preview_zoom_label_var = tk.StringVar(value="200%")
         self.played_frame_var = tk.IntVar(value=0)
@@ -136,6 +141,7 @@ class ProjectPVApp(tk.Tk):
             0: {},
             self.frames_var.get() - 1: {},
         }
+        self._hidden_bars: set[str] = set()
         self._hidden_bar_images: set[str] = set()
         self._updating_playhead = False
         self._selected_joints.add(self.selected_joint_var.get())
@@ -205,10 +211,15 @@ class ProjectPVApp(tk.Tk):
         ttk.Checkbutton(color_frame, text="Show joints", variable=self.show_joints_var, command=self._redraw).grid(
             row=1, column=0, columnspan=2, sticky="w", pady=(8, 0)
         )
+        ttk.Checkbutton(color_frame, text="Show bars", variable=self.show_bars_var, command=self._redraw).grid(
+            row=1, column=2, columnspan=2, sticky="w", pady=(8, 0)
+        )
 
         self.vector_canvas = tk.Canvas(keyframe_tab, width=360, height=240, bg="#fbfaf6", highlightthickness=1, highlightbackground="#cfc8b8")
         self.vector_canvas.grid(row=0, column=0, sticky="ew", pady=(0, 12))
         self.vector_canvas.bind("<Button-1>", self._select_vector_joint)
+        self.vector_canvas.bind("<B1-Motion>", self._drag_vector_joint)
+        self.vector_canvas.bind("<ButtonRelease-1>", self._release_vector_joint)
 
         self.time_axis = tk.Canvas(keyframe_tab, width=360, height=36, bg="#fbfaf6", highlightthickness=1, highlightbackground="#cfc8b8")
         self.time_axis.grid(row=1, column=0, sticky="ew", pady=(0, 12))
@@ -517,6 +528,7 @@ class ProjectPVApp(tk.Tk):
         self._redraw()
 
     def _select_vector_joint(self, event: tk.Event) -> None:
+        self._vector_drag_joint = None
         if not self._vector_joint_locations:
             return
 
@@ -539,6 +551,59 @@ class ProjectPVApp(tk.Tk):
             self._selected_joints = {nearest_joint}
         self.selected_joint_var.set(nearest_joint)
         self._load_keyframe_joint()
+        if not multi_select:
+            self._vector_drag_joint = nearest_joint
+
+    def _canvas_to_joint_position(self, event: tk.Event) -> tuple[float, float]:
+        canvas = self.vector_canvas
+        width = int(canvas["width"])
+        height = int(canvas["height"])
+        fit_scale = min(width / VECTOR_FIELD_WIDTH, height / VECTOR_FIELD_HEIGHT)
+        field_width = VECTOR_FIELD_WIDTH * fit_scale
+        field_height = VECTOR_FIELD_HEIGHT * fit_scale
+        vector_x = (event.x - (width - field_width) / 2) / fit_scale
+        vector_y = (event.y - (height - field_height) / 2) / fit_scale
+        _positions, transform, _bar_images = self._preview_keyframe_state(self._keyframe_frame())
+        origin_x = transform["origin_x"]
+        origin_y = transform["origin_y"]
+        scale = transform["scale"] or 1.0
+        angle = math.radians(transform["rotation_degrees"])
+        dx = (vector_x - origin_x) / scale
+        dy = (vector_y - origin_y) / scale
+        return (
+            dx * math.cos(angle) + dy * math.sin(angle),
+            -dx * math.sin(angle) + dy * math.cos(angle),
+        )
+
+    def _project_keyframe_positions(self, positions: dict[str, tuple[float, float]]) -> dict[str, tuple[float, float]]:
+        return enforce_rigid_bar_lengths(
+            positions,
+            self._skeleton.rigid_hierarchy(),
+            joints=self._skeleton.joints,
+        )
+
+    def _drag_vector_joint(self, event: tk.Event) -> None:
+        if self._vector_drag_joint is None:
+            return
+        frame = self._keyframe_frame()
+        if frame not in self._keyframe_positions:
+            self.status_var.set(f"Add keyframe {frame} before dragging joints")
+            return
+        positions = dict(self._keyframe_positions[frame])
+        positions[self._vector_drag_joint] = self._canvas_to_joint_position(event)
+        positions = self._project_keyframe_positions(positions)
+        self._keyframe_positions[frame] = positions
+        selected_joint = self.selected_joint_var.get()
+        if selected_joint in positions:
+            x, y = positions[selected_joint]
+            self.joint_x_var.set(x)
+            self.joint_y_var.set(y)
+        self._refresh_joint_table(positions)
+        self._show_keyframe_in_pixel_preview(frame)
+        self._redraw()
+
+    def _release_vector_joint(self, _event: tk.Event) -> None:
+        self._vector_drag_joint = None
 
     def _select_timeline_frame(self, event: tk.Event) -> None:
         frames = max(2, int(self.frames_var.get()))
@@ -582,7 +647,7 @@ class ProjectPVApp(tk.Tk):
     ) -> tuple[dict[str, tuple[float, float]], dict[str, float], dict[str, BarImage]]:
         if frame in self._keyframe_positions and frame in self._keyframe_transforms:
             return (
-                dict(self._keyframe_positions[frame]),
+                self._project_keyframe_positions(dict(self._keyframe_positions[frame])),
                 dict(self._keyframe_transforms[frame]),
                 dict(self._keyframe_bar_images.get(frame, {})),
             )
@@ -1063,6 +1128,11 @@ class ProjectPVApp(tk.Tk):
             return
         positions = self._keyframe_positions[frame]
         positions[self.selected_joint_var.get()] = (float(self.joint_x_var.get()), float(self.joint_y_var.get()))
+        positions = self._project_keyframe_positions(positions)
+        self._keyframe_positions[frame] = positions
+        x, y = positions[self.selected_joint_var.get()]
+        self.joint_x_var.set(x)
+        self.joint_y_var.set(y)
         self._refresh_joint_table(positions)
         self._redraw()
 
@@ -1139,6 +1209,8 @@ class ProjectPVApp(tk.Tk):
             outline=self.outline_var.get(),
             background=self.background_var.get(),
             show_joints=bool(self.show_joints_var.get()),
+            show_bars=bool(self.show_bars_var.get()),
+            hidden_bars=tuple(sorted(self._hidden_bars)),
             hidden_bar_images=tuple(sorted(self._hidden_bar_images)),
             keyframes=keyframes,
             skeleton=self._skeleton,
@@ -1191,7 +1263,7 @@ class ProjectPVApp(tk.Tk):
         flattened_points = [point for segment in vector_segments for point in segment]
         pixel_points, _ = fit_vector_points_to_pixel_field(flattened_points, width, height)
         joint_locations, _ = fit_vector_points_to_pixel_field(vector_joints, width, height)
-        segments = list(zip(pixel_points[0::2], pixel_points[1::2]))
+        segments = list(zip(self._skeleton.bars, pixel_points[0::2], pixel_points[1::2]))
         pixel_joint_map = {joint.name: point for joint, point in zip(joints, joint_locations)}
 
         axis_points = transform_points(((0, 0), (40, 0), (0, 40)), center, scale, rotation)
@@ -1200,8 +1272,11 @@ class ProjectPVApp(tk.Tk):
         canvas.create_line(origin, y_axis, fill="#2f6f4e", width=2, arrow=tk.LAST)
         canvas.create_oval(origin[0] - 4, origin[1] - 4, origin[0] + 4, origin[1] + 4, fill="#17202a", outline="")
 
-        for segment_start, segment_end in segments:
-            canvas.create_line(segment_start, segment_end, fill=spec.outline, width=4, capstyle=tk.ROUND)
+        if spec.show_bars:
+            for bar, segment_start, segment_end in segments:
+                if bar.name in spec.hidden_bars:
+                    continue
+                canvas.create_line(segment_start, segment_end, fill=spec.outline, width=4, capstyle=tk.ROUND)
         if bar_images:
             for bar in self._skeleton.bars:
                 attachment = bar_images.get(bar.name)
@@ -1282,6 +1357,7 @@ class ProjectPVApp(tk.Tk):
             self._selected_joints = {name for name in self._selected_joints if name in joint_names} or {self.selected_joint_var.get()}
         if self.selected_bar_var.get() not in bar_names:
             self.selected_bar_var.set(bar_names[0])
+        self._hidden_bars = {name for name in self._hidden_bars if name in bar_names}
         self._hidden_bar_images = {name for name in self._hidden_bar_images if name in bar_names}
 
         neutral = neutral_joint_positions(skeleton.joints)
@@ -1638,7 +1714,9 @@ class ProjectPVApp(tk.Tk):
         self.outline_var.set(spec.outline)
         self.background_var.set(spec.background)
         self.show_joints_var.set(spec.show_joints)
+        self.show_bars_var.set(spec.show_bars)
         defined_bar_names = {bar.name for bar in self._skeleton.bars}
+        self._hidden_bars = {name for name in spec.hidden_bars if name in defined_bar_names}
         self._hidden_bar_images = {name for name in spec.hidden_bar_images if name in defined_bar_names}
         self._keyframe_positions = {
             keyframe.frame: keyframe_position_map(keyframe)
