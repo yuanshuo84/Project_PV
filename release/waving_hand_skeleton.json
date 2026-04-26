@@ -1,0 +1,2443 @@
+{
+  "version": 1,
+  "parameters": {
+    "width": 256,
+    "height": 256,
+    "frames": 32,
+    "duration_ms": 70,
+    "fill": "#1b8f87",
+    "outline": "#17202a",
+    "background": "#f7f4ea",
+    "show_joints": true,
+    "hidden_bar_images": [
+      "left_collar",
+      "left_forearm",
+      "left_pelvis",
+      "left_shin",
+      "left_thigh",
+      "left_upper_arm",
+      "right_collar",
+      "right_forearm",
+      "right_pelvis",
+      "right_shin",
+      "right_thigh"
+    ]
+  },
+  "skeleton": {
+    "version": 1,
+    "joints": [
+      {
+        "name": "head",
+        "x": 0.0,
+        "y": -76.0,
+        "radius": 5.0
+      },
+      {
+        "name": "neck",
+        "x": 0.0,
+        "y": -56.0,
+        "radius": 5.0
+      },
+      {
+        "name": "left_shoulder",
+        "x": -60.0,
+        "y": -41.0,
+        "radius": 5.0
+      },
+      {
+        "name": "right_shoulder",
+        "x": 60.0,
+        "y": -41.0,
+        "radius": 5.0
+      },
+      {
+        "name": "left_elbow",
+        "x": -65.0,
+        "y": 0.0,
+        "radius": 5.0
+      },
+      {
+        "name": "right_elbow",
+        "x": 65.0,
+        "y": 0.0,
+        "radius": 5.0
+      },
+      {
+        "name": "left_wrist",
+        "x": -64.0,
+        "y": 36.0,
+        "radius": 5.0
+      },
+      {
+        "name": "right_wrist",
+        "x": 64.0,
+        "y": 36.0,
+        "radius": 5.0
+      },
+      {
+        "name": "pelvis",
+        "x": 0.0,
+        "y": 28.0,
+        "radius": 5.0
+      },
+      {
+        "name": "left_hip",
+        "x": -20.0,
+        "y": 34.0,
+        "radius": 5.0
+      },
+      {
+        "name": "right_hip",
+        "x": 20.0,
+        "y": 34.0,
+        "radius": 5.0
+      },
+      {
+        "name": "left_knee",
+        "x": -24.0,
+        "y": 76.0,
+        "radius": 5.0
+      },
+      {
+        "name": "right_knee",
+        "x": 24.0,
+        "y": 76.0,
+        "radius": 5.0
+      },
+      {
+        "name": "left_ankle",
+        "x": -28.0,
+        "y": 116.0,
+        "radius": 5.0
+      },
+      {
+        "name": "right_ankle",
+        "x": 28.0,
+        "y": 116.0,
+        "radius": 5.0
+      },
+      {
+        "name": "right_hand",
+        "x": 63.50019278967364,
+        "y": 53.99305957174893,
+        "radius": 5.0
+      },
+      {
+        "name": "left_hand",
+        "x": -63.50019278967364,
+        "y": 53.99305957174893,
+        "radius": 5.0
+      }
+    ],
+    "bars": [
+      {
+        "name": "head_to_neck",
+        "start_joint": "head",
+        "end_joint": "neck",
+        "layer": 0
+      },
+      {
+        "name": "left_collar",
+        "start_joint": "left_shoulder",
+        "end_joint": "neck",
+        "layer": 0
+      },
+      {
+        "name": "right_collar",
+        "start_joint": "neck",
+        "end_joint": "right_shoulder",
+        "layer": 0
+      },
+      {
+        "name": "left_upper_arm",
+        "start_joint": "left_shoulder",
+        "end_joint": "left_elbow",
+        "layer": 1
+      },
+      {
+        "name": "left_forearm",
+        "start_joint": "left_elbow",
+        "end_joint": "left_wrist",
+        "layer": 0
+      },
+      {
+        "name": "right_upper_arm",
+        "start_joint": "right_shoulder",
+        "end_joint": "right_elbow",
+        "layer": 2
+      },
+      {
+        "name": "right_forearm",
+        "start_joint": "right_elbow",
+        "end_joint": "right_wrist",
+        "layer": 0
+      },
+      {
+        "name": "spine",
+        "start_joint": "neck",
+        "end_joint": "pelvis",
+        "layer": 0
+      },
+      {
+        "name": "left_pelvis",
+        "start_joint": "pelvis",
+        "end_joint": "left_hip",
+        "layer": 0
+      },
+      {
+        "name": "right_pelvis",
+        "start_joint": "pelvis",
+        "end_joint": "right_hip",
+        "layer": 0
+      },
+      {
+        "name": "left_thigh",
+        "start_joint": "left_hip",
+        "end_joint": "left_knee",
+        "layer": 0
+      },
+      {
+        "name": "left_shin",
+        "start_joint": "left_knee",
+        "end_joint": "left_ankle",
+        "layer": 0
+      },
+      {
+        "name": "right_thigh",
+        "start_joint": "right_hip",
+        "end_joint": "right_knee",
+        "layer": 0
+      },
+      {
+        "name": "right_shin",
+        "start_joint": "right_knee",
+        "end_joint": "right_ankle",
+        "layer": 0
+      },
+      {
+        "name": "right_hand",
+        "start_joint": "right_wrist",
+        "end_joint": "right_hand",
+        "layer": 0
+      },
+      {
+        "name": "left_hand",
+        "start_joint": "left_wrist",
+        "end_joint": "left_hand",
+        "layer": 0
+      }
+    ],
+    "rigid_bars": [
+      {
+        "name": "head_to_neck",
+        "start_joint": "neck",
+        "end_joint": "head",
+        "layer": 0
+      },
+      {
+        "name": "left_collar",
+        "start_joint": "neck",
+        "end_joint": "left_shoulder",
+        "layer": 0
+      },
+      {
+        "name": "right_collar",
+        "start_joint": "neck",
+        "end_joint": "right_shoulder",
+        "layer": 0
+      },
+      {
+        "name": "left_upper_arm",
+        "start_joint": "left_shoulder",
+        "end_joint": "left_elbow",
+        "layer": 0
+      },
+      {
+        "name": "left_forearm",
+        "start_joint": "left_elbow",
+        "end_joint": "left_wrist",
+        "layer": 0
+      },
+      {
+        "name": "right_upper_arm",
+        "start_joint": "right_shoulder",
+        "end_joint": "right_elbow",
+        "layer": 2
+      },
+      {
+        "name": "right_forearm",
+        "start_joint": "right_elbow",
+        "end_joint": "right_wrist",
+        "layer": 0
+      },
+      {
+        "name": "spine",
+        "start_joint": "neck",
+        "end_joint": "pelvis",
+        "layer": 0
+      },
+      {
+        "name": "left_pelvis",
+        "start_joint": "pelvis",
+        "end_joint": "left_hip",
+        "layer": 0
+      },
+      {
+        "name": "right_pelvis",
+        "start_joint": "pelvis",
+        "end_joint": "right_hip",
+        "layer": 0
+      },
+      {
+        "name": "left_thigh",
+        "start_joint": "left_hip",
+        "end_joint": "left_knee",
+        "layer": 0
+      },
+      {
+        "name": "left_shin",
+        "start_joint": "left_knee",
+        "end_joint": "left_ankle",
+        "layer": 0
+      },
+      {
+        "name": "right_thigh",
+        "start_joint": "right_hip",
+        "end_joint": "right_knee",
+        "layer": 0
+      },
+      {
+        "name": "right_shin",
+        "start_joint": "right_knee",
+        "end_joint": "right_ankle",
+        "layer": 0
+      },
+      {
+        "name": "right_hand",
+        "start_joint": "right_wrist",
+        "end_joint": "right_hand",
+        "layer": 0
+      },
+      {
+        "name": "left_hand",
+        "start_joint": "left_wrist",
+        "end_joint": "left_hand",
+        "layer": 0
+      }
+    ]
+  },
+  "keyframes": [
+    {
+      "frame": 0,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 69.03091420432861,
+          "y": -2.977564478479728
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 67.30522384304459,
+          "y": 51.10763062375378
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 67.80503105337095,
+          "y": 33.114571052004834
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 78.75665226004824,
+          "y": -53.01214925130738
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 75.83277270741658,
+          "y": -67.57116694776953
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 76.33257991774295,
+          "y": -85.56422651951846
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 62.01214925130738,
+          "y": -69.75665226004823
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 29.250082708733224,
+          "y": -82.22918066612938
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 29.749889919059598,
+          "y": -100.22224023787831
+        }
+      ]
+    },
+    {
+      "frame": 13,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 59.4715786367226,
+          "y": -70.99577134233402
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 61.23403075864399,
+          "y": -83.46829974841516
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 61.73383796897036,
+          "y": -101.46135932016409
+        }
+      ]
+    },
+    {
+      "frame": 17,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 61.38521398081002,
+          "y": -70.0830141046979
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 27.500630459633406,
+          "y": -81.93332118913028
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 28.00043766995978,
+          "y": -99.92638076087921
+        }
+      ]
+    },
+    {
+      "frame": 21,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 60.11473517344156,
+          "y": -70.70266802213379
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 64.09982223459082,
+          "y": -81.89195754774147
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 64.59962944491718,
+          "y": -99.8850171194904
+        }
+      ]
+    },
+    {
+      "frame": 25,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 74.91200329643578,
+          "y": -58.93238948854025
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 64.52952874538576,
+          "y": -75.35104377997419
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 65.02933595571213,
+          "y": -93.34410335172312
+        }
+      ]
+    },
+    {
+      "frame": 31,
+      "origin_x": 180.0,
+      "origin_y": 174.0,
+      "scale": 1.25,
+      "rotation_degrees": 0.0,
+      "bar_images": [
+        {
+          "bar_name": "head_to_neck",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 559,
+          "source_y": 22,
+          "source_width": 303,
+          "source_height": 216,
+          "anchor_start_x": 710,
+          "anchor_start_y": 178,
+          "anchor_end_x": 710,
+          "anchor_end_y": 220
+        },
+        {
+          "bar_name": "left_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 135,
+          "anchor_end_x": 724,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "left_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 406,
+          "anchor_end_x": 362,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "left_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 0,
+          "anchor_start_y": 677,
+          "anchor_end_x": 362,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 677,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "left_upper_arm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 1086,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 1086,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1448,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_collar",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 0,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 135,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 135
+        },
+        {
+          "bar_name": "right_forearm",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 724,
+          "source_y": 271,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 724,
+          "anchor_start_y": 406,
+          "anchor_end_x": 1086,
+          "anchor_end_y": 406
+        },
+        {
+          "bar_name": "right_pelvis",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 542,
+          "source_width": 362,
+          "source_height": 271,
+          "anchor_start_x": 362,
+          "anchor_start_y": 677,
+          "anchor_end_x": 724,
+          "anchor_end_y": 677
+        },
+        {
+          "bar_name": "right_shin",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 362,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 362,
+          "anchor_start_y": 949,
+          "anchor_end_x": 724,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_thigh",
+          "image_path": "release\\DoorKeeper_bg.png",
+          "source_x": 0,
+          "source_y": 813,
+          "source_width": 362,
+          "source_height": 273,
+          "anchor_start_x": 0,
+          "anchor_start_y": 949,
+          "anchor_end_x": 362,
+          "anchor_end_y": 949
+        },
+        {
+          "bar_name": "right_upper_arm",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 983,
+          "source_y": 159,
+          "source_width": 154,
+          "source_height": 208,
+          "anchor_start_x": 1046,
+          "anchor_start_y": 217,
+          "anchor_end_x": 1066,
+          "anchor_end_y": 332
+        },
+        {
+          "bar_name": "spine",
+          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "source_x": 543,
+          "source_y": 321,
+          "source_width": 327,
+          "source_height": 206,
+          "anchor_start_x": 708,
+          "anchor_start_y": 321,
+          "anchor_end_x": 708,
+          "anchor_end_y": 527
+        }
+      ],
+      "joint_positions": [
+        {
+          "joint_name": "head",
+          "x": 0.0,
+          "y": -76.0
+        },
+        {
+          "joint_name": "left_ankle",
+          "x": -28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "left_elbow",
+          "x": -65.0,
+          "y": 0.0
+        },
+        {
+          "joint_name": "left_hand",
+          "x": -63.500192789673626,
+          "y": 53.99305957174893
+        },
+        {
+          "joint_name": "left_hip",
+          "x": -20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "left_knee",
+          "x": -24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "left_shoulder",
+          "x": -60.0,
+          "y": -41.0
+        },
+        {
+          "joint_name": "left_wrist",
+          "x": -64.0,
+          "y": 36.0
+        },
+        {
+          "joint_name": "neck",
+          "x": 0.0,
+          "y": -56.0
+        },
+        {
+          "joint_name": "pelvis",
+          "x": 0.0,
+          "y": 28.0
+        },
+        {
+          "joint_name": "right_ankle",
+          "x": 28.0,
+          "y": 116.0
+        },
+        {
+          "joint_name": "right_elbow",
+          "x": 69.03091420432861,
+          "y": -2.977564478479728
+        },
+        {
+          "joint_name": "right_hand",
+          "x": 67.30522384304459,
+          "y": 51.10763062375378
+        },
+        {
+          "joint_name": "right_hip",
+          "x": 20.0,
+          "y": 34.0
+        },
+        {
+          "joint_name": "right_knee",
+          "x": 24.0,
+          "y": 76.0
+        },
+        {
+          "joint_name": "right_shoulder",
+          "x": 23.0,
+          "y": -48.0
+        },
+        {
+          "joint_name": "right_wrist",
+          "x": 67.80503105337095,
+          "y": 33.114571052004834
+        }
+      ]
+    }
+  ]
+}

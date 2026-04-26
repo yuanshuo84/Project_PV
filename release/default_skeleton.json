@@ -1,0 +1,267 @@
+{
+  "version": 1,
+  "joints": [
+    {
+      "name": "head",
+      "x": 0.0,
+      "y": -76.0,
+      "radius": 5.0
+    },
+    {
+      "name": "neck",
+      "x": 0.0,
+      "y": -56.0,
+      "radius": 5.0
+    },
+    {
+      "name": "left_shoulder",
+      "x": -28.0,
+      "y": -42.0,
+      "radius": 5.0
+    },
+    {
+      "name": "right_shoulder",
+      "x": 28.0,
+      "y": -42.0,
+      "radius": 5.0
+    },
+    {
+      "name": "left_elbow",
+      "x": -50.0,
+      "y": -8.0,
+      "radius": 5.0
+    },
+    {
+      "name": "right_elbow",
+      "x": 50.0,
+      "y": -8.0,
+      "radius": 5.0
+    },
+    {
+      "name": "left_wrist",
+      "x": -64.0,
+      "y": 26.0,
+      "radius": 5.0
+    },
+    {
+      "name": "right_wrist",
+      "x": 64.0,
+      "y": 26.0,
+      "radius": 5.0
+    },
+    {
+      "name": "pelvis",
+      "x": 0.0,
+      "y": 28.0,
+      "radius": 5.0
+    },
+    {
+      "name": "left_hip",
+      "x": -20.0,
+      "y": 34.0,
+      "radius": 5.0
+    },
+    {
+      "name": "right_hip",
+      "x": 20.0,
+      "y": 34.0,
+      "radius": 5.0
+    },
+    {
+      "name": "left_knee",
+      "x": -24.0,
+      "y": 76.0,
+      "radius": 5.0
+    },
+    {
+      "name": "right_knee",
+      "x": 24.0,
+      "y": 76.0,
+      "radius": 5.0
+    },
+    {
+      "name": "left_ankle",
+      "x": -28.0,
+      "y": 116.0,
+      "radius": 5.0
+    },
+    {
+      "name": "right_ankle",
+      "x": 28.0,
+      "y": 116.0,
+      "radius": 5.0
+    }
+  ],
+  "bars": [
+    {
+      "name": "head_to_neck",
+      "start_joint": "head",
+      "end_joint": "neck",
+      "layer": 0
+    },
+    {
+      "name": "left_collar",
+      "start_joint": "left_shoulder",
+      "end_joint": "neck",
+      "layer": 0
+    },
+    {
+      "name": "right_collar",
+      "start_joint": "neck",
+      "end_joint": "right_shoulder",
+      "layer": 0
+    },
+    {
+      "name": "left_upper_arm",
+      "start_joint": "left_shoulder",
+      "end_joint": "left_elbow",
+      "layer": 0
+    },
+    {
+      "name": "left_forearm",
+      "start_joint": "left_elbow",
+      "end_joint": "left_wrist",
+      "layer": 0
+    },
+    {
+      "name": "right_upper_arm",
+      "start_joint": "right_shoulder",
+      "end_joint": "right_elbow",
+      "layer": 0
+    },
+    {
+      "name": "right_forearm",
+      "start_joint": "right_elbow",
+      "end_joint": "right_wrist",
+      "layer": 0
+    },
+    {
+      "name": "spine",
+      "start_joint": "neck",
+      "end_joint": "pelvis",
+      "layer": 0
+    },
+    {
+      "name": "left_pelvis",
+      "start_joint": "pelvis",
+      "end_joint": "left_hip",
+      "layer": 0
+    },
+    {
+      "name": "right_pelvis",
+      "start_joint": "pelvis",
+      "end_joint": "right_hip",
+      "layer": 0
+    },
+    {
+      "name": "left_thigh",
+      "start_joint": "left_hip",
+      "end_joint": "left_knee",
+      "layer": 0
+    },
+    {
+      "name": "left_shin",
+      "start_joint": "left_knee",
+      "end_joint": "left_ankle",
+      "layer": 0
+    },
+    {
+      "name": "right_thigh",
+      "start_joint": "right_hip",
+      "end_joint": "right_knee",
+      "layer": 0
+    },
+    {
+      "name": "right_shin",
+      "start_joint": "right_knee",
+      "end_joint": "right_ankle",
+      "layer": 0
+    }
+  ],
+  "rigid_bars": [
+    {
+      "name": "head_to_neck",
+      "start_joint": "neck",
+      "end_joint": "head",
+      "layer": 0
+    },
+    {
+      "name": "left_collar",
+      "start_joint": "neck",
+      "end_joint": "left_shoulder",
+      "layer": 0
+    },
+    {
+      "name": "right_collar",
+      "start_joint": "neck",
+      "end_joint": "right_shoulder",
+      "layer": 0
+    },
+    {
+      "name": "spine",
+      "start_joint": "neck",
+      "end_joint": "pelvis",
+      "layer": 0
+    },
+    {
+      "name": "left_upper_arm",
+      "start_joint": "left_shoulder",
+      "end_joint": "left_elbow",
+      "layer": 0
+    },
+    {
+      "name": "left_forearm",
+      "start_joint": "left_elbow",
+      "end_joint": "left_wrist",
+      "layer": 0
+    },
+    {
+      "name": "right_upper_arm",
+      "start_joint": "right_shoulder",
+      "end_joint": "right_elbow",
+      "layer": 0
+    },
+    {
+      "name": "right_forearm",
+      "start_joint": "right_elbow",
+      "end_joint": "right_wrist",
+      "layer": 0
+    },
+    {
+      "name": "left_pelvis",
+      "start_joint": "pelvis",
+      "end_joint": "left_hip",
+      "layer": 0
+    },
+    {
+      "name": "right_pelvis",
+      "start_joint": "pelvis",
+      "end_joint": "right_hip",
+      "layer": 0
+    },
+    {
+      "name": "left_thigh",
+      "start_joint": "left_hip",
+      "end_joint": "left_knee",
+      "layer": 0
+    },
+    {
+      "name": "left_shin",
+      "start_joint": "left_knee",
+      "end_joint": "left_ankle",
+      "layer": 0
+    },
+    {
+      "name": "right_thigh",
+      "start_joint": "right_hip",
+      "end_joint": "right_knee",
+      "layer": 0
+    },
+    {
+      "name": "right_shin",
+      "start_joint": "right_knee",
+      "end_joint": "right_ankle",
+      "layer": 0
+    }
+  ]
+}
