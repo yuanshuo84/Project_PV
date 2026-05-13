@@ -335,7 +335,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -347,7 +347,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -359,7 +359,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -371,7 +371,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -383,7 +383,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -395,7 +395,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -407,7 +407,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -419,7 +419,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -431,7 +431,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -443,7 +443,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -455,7 +455,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -467,7 +467,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -479,7 +479,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -491,7 +491,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -503,7 +503,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -515,7 +515,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -623,7 +623,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -635,7 +635,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -647,7 +647,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -659,7 +659,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -671,7 +671,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -683,7 +683,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -695,7 +695,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -707,7 +707,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -719,7 +719,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -731,7 +731,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -743,7 +743,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -755,7 +755,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -767,7 +767,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -779,7 +779,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -791,7 +791,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -803,7 +803,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -911,7 +911,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -923,7 +923,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -935,7 +935,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -947,7 +947,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -959,7 +959,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -971,7 +971,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -983,7 +983,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -995,7 +995,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -1007,7 +1007,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -1019,7 +1019,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -1031,7 +1031,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -1043,7 +1043,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -1055,7 +1055,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -1067,7 +1067,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -1079,7 +1079,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -1091,7 +1091,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -1199,7 +1199,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -1211,7 +1211,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -1223,7 +1223,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -1235,7 +1235,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -1247,7 +1247,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -1259,7 +1259,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -1271,7 +1271,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -1283,7 +1283,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -1295,7 +1295,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -1307,7 +1307,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -1319,7 +1319,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -1331,7 +1331,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -1343,7 +1343,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -1355,7 +1355,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -1367,7 +1367,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -1379,7 +1379,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -1487,7 +1487,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -1499,7 +1499,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -1511,7 +1511,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -1523,7 +1523,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -1535,7 +1535,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -1547,7 +1547,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -1559,7 +1559,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -1571,7 +1571,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -1583,7 +1583,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -1595,7 +1595,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -1607,7 +1607,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -1619,7 +1619,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -1631,7 +1631,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -1643,7 +1643,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -1655,7 +1655,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -1667,7 +1667,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -1775,7 +1775,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -1787,7 +1787,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -1799,7 +1799,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -1811,7 +1811,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -1823,7 +1823,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -1835,7 +1835,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -1847,7 +1847,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -1859,7 +1859,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -1871,7 +1871,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -1883,7 +1883,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -1895,7 +1895,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -1907,7 +1907,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -1919,7 +1919,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -1931,7 +1931,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -1943,7 +1943,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -1955,7 +1955,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -2063,7 +2063,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -2075,7 +2075,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -2087,7 +2087,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -2099,7 +2099,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -2111,7 +2111,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -2123,7 +2123,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -2135,7 +2135,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -2147,7 +2147,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -2159,7 +2159,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -2171,7 +2171,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -2183,7 +2183,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -2195,7 +2195,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -2207,7 +2207,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -2219,7 +2219,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -2231,7 +2231,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -2243,7 +2243,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -2351,7 +2351,7 @@
       "bar_images": [
         {
           "bar_name": "head_to_neck",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 559,
           "source_y": 22,
           "source_width": 303,
@@ -2363,7 +2363,7 @@
         },
         {
           "bar_name": "left_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 0,
           "source_width": 362,
@@ -2375,7 +2375,7 @@
         },
         {
           "bar_name": "left_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 324,
           "source_y": 370,
           "source_width": 84,
@@ -2387,7 +2387,7 @@
         },
         {
           "bar_name": "left_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 305,
           "source_y": 559,
           "source_width": 119,
@@ -2399,7 +2399,7 @@
         },
         {
           "bar_name": "left_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 542,
           "source_width": 362,
@@ -2411,7 +2411,7 @@
         },
         {
           "bar_name": "left_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 1086,
           "source_y": 542,
           "source_width": 362,
@@ -2423,7 +2423,7 @@
         },
         {
           "bar_name": "left_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 542,
           "source_width": 362,
@@ -2435,7 +2435,7 @@
         },
         {
           "bar_name": "left_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 332,
           "source_y": 173,
           "source_width": 108,
@@ -2447,7 +2447,7 @@
         },
         {
           "bar_name": "right_collar",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 724,
           "source_y": 0,
           "source_width": 362,
@@ -2459,7 +2459,7 @@
         },
         {
           "bar_name": "right_forearm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 1021,
           "source_y": 378,
           "source_width": 108,
@@ -2471,7 +2471,7 @@
         },
         {
           "bar_name": "right_hand",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper.png",
           "source_x": 1016,
           "source_y": 559,
           "source_width": 116,
@@ -2483,7 +2483,7 @@
         },
         {
           "bar_name": "right_pelvis",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 542,
           "source_width": 362,
@@ -2495,7 +2495,7 @@
         },
         {
           "bar_name": "right_shin",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 362,
           "source_y": 813,
           "source_width": 362,
@@ -2507,7 +2507,7 @@
         },
         {
           "bar_name": "right_thigh",
-          "image_path": "release\\DoorKeeper_bg.png",
+          "image_path": "asset\\DoorKeeper_bg.png",
           "source_x": 0,
           "source_y": 813,
           "source_width": 362,
@@ -2519,7 +2519,7 @@
         },
         {
           "bar_name": "right_upper_arm",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 983,
           "source_y": 159,
           "source_width": 154,
@@ -2531,7 +2531,7 @@
         },
         {
           "bar_name": "spine",
-          "image_path": "E:\\Working_Folder\\Project_PV\\release\\DoorKeeper_bg.png",
+          "image_path": "E:\\Working_Folder\\Project_PV\\asset\\DoorKeeper_bg.png",
           "source_x": 543,
           "source_y": 321,
           "source_width": 327,
@@ -2632,3 +2632,5 @@
     }
   ]
 }
+
+

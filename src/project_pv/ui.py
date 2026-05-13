@@ -43,9 +43,9 @@ from project_pv.skeleton_model import (
 )
 
 LOGGER = logging.getLogger(__name__)
-DEFAULT_BODY_PIXEL_MAP = Path(__file__).resolve().parents[2] / "release" / "DoorKeeper.png"
-DEFAULT_ANIMATION_RECORD = Path(__file__).resolve().parents[2] / "release" / "waving_hand_skeleton.json"
-DEFAULT_SKELETON_RECORD = Path(__file__).resolve().parents[2] / "release" / "skeleton.json"
+DEFAULT_BODY_PIXEL_MAP = Path(__file__).resolve().parents[2] / "asset" / "DoorKeeper.png"
+DEFAULT_ANIMATION_RECORD = Path(__file__).resolve().parents[2] / "asset" / "waving_hand_skeleton.json"
+DEFAULT_SKELETON_RECORD = Path(__file__).resolve().parents[2] / "asset" / "skeleton.json"
 
 
 class ProjectPVApp(tk.Tk):
@@ -1762,7 +1762,7 @@ class ProjectPVApp(tk.Tk):
     def export_record(self) -> None:
         try:
             spec = self._spec()
-            default_path = Path.cwd() / "release" / "project_pv_animation.json"
+            default_path = Path.cwd() / "asset" / "project_pv_animation.json"
             path = filedialog.asksaveasfilename(
                 title="Export animation record",
                 defaultextension=".json",
@@ -1784,7 +1784,7 @@ class ProjectPVApp(tk.Tk):
         try:
             spec = self._spec()
             if self._record_path is None:
-                default_path = Path.cwd() / "release" / "project_pv_animation.gif"
+                default_path = Path.cwd() / "asset" / "project_pv_animation.gif"
             else:
                 default_path = self._record_path.with_suffix(".gif")
             path = filedialog.asksaveasfilename(
